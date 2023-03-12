@@ -1,8 +1,8 @@
 import { BlitzPage } from "@blitzjs/next"
 import { useRouter } from "next/router"
-import React, { useEffect } from "react"
+import React, { Suspense, useEffect } from "react"
 import SearchResults from "../core/components/SearchResults"
-import { useMutation, useQuery } from "@blitzjs/rpc"
+import { useQuery } from "@blitzjs/rpc"
 import getSearchResults from "../search/queries/getSearchResults"
 import Header from "../core/components/Header"
 
@@ -19,9 +19,10 @@ const SearchResultsPage: BlitzPage = () => {
       {/*  Header */}
 
       <Header />
-
-      {/* Search Results */}
-      <SearchResults results={results} />
+      <Suspense fallback="Loading...">
+        {/* Search Results */}
+        <SearchResults results={results} />
+      </Suspense>
     </div>
   )
 }
