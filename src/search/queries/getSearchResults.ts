@@ -19,21 +19,4 @@ export default async function getSearchResults({ query }: GetSearchResults, { se
   //     }
   //   ],
   // }
-
-  const podcastLookupUrl = process.env.API_URL + "/api/leo/search/"
-  const results = await fetch(podcastLookupUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Api-Key ${process.env.API_KEY}`,
-    },
-    body: JSON.stringify({
-      search_term: query,
-    }),
-  })
-
-  const data = await results.json()
-  console.log(data)
-
-  return data
 }

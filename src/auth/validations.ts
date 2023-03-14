@@ -40,3 +40,12 @@ export const ChangePassword = z.object({
   currentPassword: z.string(),
   newPassword: password,
 })
+
+export const ConversationEntry = z.object({
+  user: z.string(),
+  bot: z.string(),
+})
+export const SendMessage = z.object({
+  message: z.string(),
+  conversation: z.array(ConversationEntry),
+})
