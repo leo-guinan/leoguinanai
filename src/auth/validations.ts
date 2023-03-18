@@ -49,3 +49,15 @@ export const SendMessage = z.object({
   message: z.string(),
   conversation: z.array(ConversationEntry),
 })
+
+export const AddPodcastRecommendation = z.object({
+  name: z.string(),
+  description: z.string(),
+  link: z.string(),
+  recommendation: z.string(),
+})
+
+export const AddFact = z.object({
+  question: z.string(),
+  answer: z.string(),
+})

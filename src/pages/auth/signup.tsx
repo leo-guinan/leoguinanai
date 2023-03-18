@@ -2,15 +2,18 @@ import { useRouter } from "next/router"
 import Layout from "src/core/layouts/Layout"
 import { SignupForm } from "src/auth/components/SignupForm"
 import { BlitzPage, Routes } from "@blitzjs/next"
+import { Suspense } from "react"
 
-const SignupPage: BlitzPage = () => {
+const SignupPageOld: BlitzPage = () => {
   const router = useRouter()
 
   return (
     <Layout title="Sign Up">
-      <SignupForm onSuccess={() => router.push(Routes.Home())} />
+      <Suspense fallback="Loading...">
+        <SignupForm onSuccess={() => router.push(Routes.Home())} />
+      </Suspense>
     </Layout>
   )
 }
 
-export default SignupPage
+export default SignupPageOld

@@ -3,7 +3,7 @@ import Layout from "src/core/layouts/Layout"
 import { LoginForm } from "src/auth/components/LoginForm"
 import { useRouter } from "next/router"
 
-const LoginPage: BlitzPage = () => {
+const LoginPageOld: BlitzPage = () => {
   const router = useRouter()
 
   return (
@@ -18,4 +18,4 @@ const LoginPage: BlitzPage = () => {
   )
 }
 
-export default LoginPage
+export default LoginPageOld
