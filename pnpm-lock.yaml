@@ -23,6 +23,7 @@ specifiers:
   eslint: 8.27.0
   eslint-config-next: 12.3.1
   eslint-config-prettier: 8.5.0
+  fathom-client: 3.5.0
   final-form: 4.20.9
   husky: 8.0.2
   jsdom: 20.0.3
@@ -54,6 +55,7 @@ dependencies:
   "@tailwindcss/forms": 0.5.3_tailwindcss@3.2.7
   "@tailwindcss/line-clamp": 0.4.2_tailwindcss@3.2.7
   blitz: 2.0.0-beta.23_6iarlevy7ztiojomurw2n4btfa
+  fathom-client: 3.5.0
   final-form: 4.20.9
   next: 13.1.6_6m24vuloj5ihw4zc5lbsktc4fu
   prisma: 4.6.0
@@ -85,7 +87,7 @@ devDependencies:
   prettier-plugin-prisma: 4.4.0_prettier@2.8.4
   pretty-quick: 3.1.3_prettier@2.8.4
   preview-email: 3.0.7
-  tailwindcss: 3.2.7_postcss@8.4.21
+  tailwindcss: 3.2.7
   typescript: 4.9.5
   vite-tsconfig-paths: 3.6.0_vite@3.2.5
   vitest: 0.25.3_jsdom@20.0.3
@@ -3788,7 +3790,7 @@ packages:
       tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.2.7_postcss@8.4.21
+      tailwindcss: 3.2.7
     dev: false
 
   /@tailwindcss/line-clamp/0.4.2_tailwindcss@3.2.7:
@@ -3799,7 +3801,7 @@ packages:
     peerDependencies:
       tailwindcss: ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
     dependencies:
-      tailwindcss: 3.2.7_postcss@8.4.21
+      tailwindcss: 3.2.7
     dev: false
 
   /@tanstack/query-core/4.26.1:
@@ -7266,7 +7268,7 @@ packages:
       eslint: 8.27.0
       eslint-import-resolver-node: 0.3.7
       eslint-import-resolver-typescript: 2.7.1_f2pdo5p2l4szqoutj4achemqsa
-      eslint-plugin-import: 2.27.5_dwdbdsr7x7hrieapmoext6fsza
+      eslint-plugin-import: 2.27.5_ffeb2upi6fdqevbaxcqptla3cm
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.27.0
       eslint-plugin-react: 7.32.2_eslint@8.27.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.27.0
@@ -7313,7 +7315,7 @@ packages:
     dependencies:
       debug: 4.3.4
       eslint: 8.27.0
-      eslint-plugin-import: 2.27.5_dwdbdsr7x7hrieapmoext6fsza
+      eslint-plugin-import: 2.27.5_ffeb2upi6fdqevbaxcqptla3cm
       glob: 7.2.3
       is-glob: 4.0.3
       resolve: 1.22.1
@@ -7322,7 +7324,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils/2.7.4_gsxb2qkj3cgp67febdcf7xntoa:
+  /eslint-module-utils/2.7.4_xfr7wu6uzugc7aco7eslf4pi2m:
     resolution:
       {
         integrity: sha512-j4GT+rqzCoRKHwURX7pddtIPGySnX9Si/cgMI5ztrcqOPtk5dDEeZ34CQVPphnqkJytlc97Vuk05Um2mJ3gEQA==,
@@ -7350,11 +7352,12 @@ packages:
       debug: 3.2.7
       eslint: 8.27.0
       eslint-import-resolver-node: 0.3.7
+      eslint-import-resolver-typescript: 2.7.1_f2pdo5p2l4szqoutj4achemqsa
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /eslint-plugin-import/2.27.5_dwdbdsr7x7hrieapmoext6fsza:
+  /eslint-plugin-import/2.27.5_ffeb2upi6fdqevbaxcqptla3cm:
     resolution:
       {
         integrity: sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==,
@@ -7375,7 +7378,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.27.0
       eslint-import-resolver-node: 0.3.7
-      eslint-module-utils: 2.7.4_gsxb2qkj3cgp67febdcf7xntoa
+      eslint-module-utils: 2.7.4_xfr7wu6uzugc7aco7eslf4pi2m
       has: 1.0.3
       is-core-module: 2.11.0
       is-glob: 4.0.3
@@ -7821,6 +7824,13 @@ packages:
       }
     dependencies:
       reusify: 1.0.4
+
+  /fathom-client/3.5.0:
+    resolution:
+      {
+        integrity: sha512-BiRDS9Q9a8Zma0H717FWC5cvf545K/CsxBpxKT22TcSl1EbRhhlHWIJgrdeiQUfdorBK2ppy09TwMOhRsbos/A==,
+      }
+    dev: false
 
   /fetch-blob/3.2.0:
     resolution:
@@ -12938,15 +12948,13 @@ packages:
       }
     dev: true
 
-  /tailwindcss/3.2.7_postcss@8.4.21:
+  /tailwindcss/3.2.7:
     resolution:
       {
         integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==,
       }
     engines: { node: ">=12.13.0" }
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
