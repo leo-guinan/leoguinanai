@@ -4,6 +4,7 @@ specifiers:
   "@blitzjs/auth": 2.0.0-beta.23
   "@blitzjs/next": 2.0.0-beta.23
   "@blitzjs/rpc": 2.0.0-beta.23
+  "@headlessui/react": 1.7.15
   "@heroicons/react": 2.0.16
   "@next/bundle-analyzer": 12.0.8
   "@next/env": 13.2.4
@@ -49,6 +50,7 @@ dependencies:
   "@blitzjs/auth": 2.0.0-beta.23_i2pl5ua3vxhoctamgpxxjhvhda
   "@blitzjs/next": 2.0.0-beta.23_kkdxivutfj2c2vcwq4tzcpy4zy
   "@blitzjs/rpc": 2.0.0-beta.23_kkdxivutfj2c2vcwq4tzcpy4zy
+  "@headlessui/react": 1.7.15_biqbaboplfbrettd7655fr4n2y
   "@heroicons/react": 2.0.16_react@18.2.0
   "@next/env": 13.2.4
   "@prisma/client": 4.6.0_prisma@4.6.0
@@ -3100,6 +3102,21 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@headlessui/react/1.7.15_biqbaboplfbrettd7655fr4n2y:
+    resolution:
+      {
+        integrity: sha512-OTO0XtoRQ6JPB1cKNFYBZv2Q0JMqMGNhYP1CjPvcJvjz8YGokz8oAj89HIYZGN0gZzn/4kk9iUpmMF4Q21Gsqw==,
+      }
+    engines: { node: ">=10" }
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /@heroicons/react/2.0.16_react@18.2.0:
     resolution:
