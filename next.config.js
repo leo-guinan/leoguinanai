@@ -15,7 +15,8 @@ const config = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; frame-src app.copy.ai; style-src 'unsafe-inline'",
+            value:
+              "default-src 'self' 'unsafe-eval'; frame-src app.copy.ai; style-src 'unsafe-inline'",
           },
         ],
       },
