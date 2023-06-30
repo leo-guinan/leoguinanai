@@ -3,15 +3,9 @@ import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
 const navigation = [
-  { name: "YouTube Channel", href: "https://youtube.com/@listentoleonow" },
-  { name: "Podcast", href: "https://howtoscaleyourself.com" },
-  { name: "Newsletter", href: "https://internetfactory.substack.com/" },
-  { name: "Hitchhiker's Guide To The Future", href: "https://hitchhikersguidetothefuture.com" },
-  { name: "Build In Public University", href: "https://buildinpublicuniversity.com" },
-  {
-    name: "Coaching",
-    href: "https://broken-busby-5ed.notion.site/Coaching-Program-bea1a59c6e164bbc8cc5ed855f3f7b58",
-  },
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "https://blog.leoguinan.ai/" },
+  { name: "Suggest an automation for me", href: "/suggest/automation" },
 ]
 
 const Header = () => {
